@@ -1,0 +1,8 @@
+C:\Users\gusta\OneDrive\Área de Trabalho\ExercArvore\ExercArvore\obj\Debug\ExercArvore.csprojAssemblyReference.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\ExercArvore\ExercArvore\obj\Debug\ExercArvore.Principal.resources
+C:\Users\gusta\OneDrive\Área de Trabalho\ExercArvore\ExercArvore\obj\Debug\ExercArvore.csproj.GenerateResource.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\ExercArvore\ExercArvore\obj\Debug\ExercArvore.csproj.CoreCompileInputs.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\ExercArvore\ExercArvore\bin\Debug\ExercArvore.exe
+C:\Users\gusta\OneDrive\Área de Trabalho\ExercArvore\ExercArvore\bin\Debug\ExercArvore.pdb
+C:\Users\gusta\OneDrive\Área de Trabalho\ExercArvore\ExercArvore\obj\Debug\ExercArvore.exe
+C:\Users\gusta\OneDrive\Área de Trabalho\ExercArvore\ExercArvore\obj\Debug\ExercArvore.pdb
