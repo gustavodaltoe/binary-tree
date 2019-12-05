@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ExercArvore
 {
-	// Classe com o nó
+	// Classe com o nÃ³
 	public class Node
 	{
 		private int info;
@@ -65,10 +65,10 @@ namespace ExercArvore
 		}
 	}
 	
-	// Classe com a árvore
+	// Classe com a Ã¡rvore
 	public class BTree
 	{
-		// Nó raiz
+		// NÃ³ raiz
 		private Node raiz;
 		public Node Raiz
 		{
@@ -88,7 +88,7 @@ namespace ExercArvore
 			raiz = null;
 		}
 
-		// Inserindo na árvore
+		// Inserindo na Ã¡rvore
 		public void Insert(int x)
 		{
             if (x == -1)
@@ -131,7 +131,7 @@ namespace ExercArvore
             }
         }
 
-		// Pesquisa na árvore
+		// Pesquisa na Ã¡rvore
 		public Node Find(int x)
 		{
 			return find(raiz, x);
@@ -147,7 +147,7 @@ namespace ExercArvore
                 return find(n.Dir, x);
         }
 
-        // Função para excluir nó
+        // FunÃ§Ã£o para excluir nÃ³
         public void Remove(int x)
         {
             remove(raiz, x);
@@ -294,40 +294,42 @@ namespace ExercArvore
             if (n.Dir != null)
                 fbDir = calcBalance(n.Dir);
 
-            if (fb == 2 || fb == -2)
+            if (fb == 2)
             {
                 // SUBARVORE ESQUERDA
                 // caso 1
                 // fb com fbEsq tem o msm sinal
-                if (fb * fbEsq > 0 || n.Dir == null)
+                if (fbEsq >= 0)
                 {
                     rotacaoDireita(n);
                 }
                 // caso 2
                 // fb com fbEsq tem sinal oposto
-                else if (fb * fbEsq < 0)
+                else
                 {
                     rotacaoEsquerda(n.Esq);
                     rotacaoDireita(n);
                 }
-
+            }
+            else if (fb == -2)
+            { 
                 // SUBARVORE DIRETIA
                 // caso 1
                 // fb com fbDir tem o msm sinal
-                else if (fb * fbDir > 0 || n.Esq == null)
+                if (fbDir < 0)
                 {
                     rotacaoEsquerda(n);
                 }
                 // caso 2
                 // fb com fbdDir tem sinal oposto
-                else if (fb * fbDir < 0)
+                else
                 {
                     rotacaoDireita(n.Dir);
                     rotacaoEsquerda(n);
                 }
             }
 
-            if (n.Pai != null)
+            if (n != raiz)
                 avl(n.Pai);
         }
 
